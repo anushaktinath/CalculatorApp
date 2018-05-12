@@ -54,11 +54,6 @@ class Calculator extends Component {
           case '*':
           case '+':
           case '-':
-              // this.setState({
-              //     selectedSymbol: str,
-              //     oldInputValue: this.state.inputValue,
-              //     inputValue: 0
-              // });
               this.props.performCalculation(this.state.inputValue, str, 0, str);
               break;
           case '=':

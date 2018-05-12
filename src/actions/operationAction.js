@@ -1,6 +1,5 @@
 import {
    OPERATION_SUCCESS,
-   OPERATION
   } from './types';
 
  export function performCalculation(oldInputVal, symbol, inputVal, str) {
@@ -44,6 +43,6 @@ import {
        inputValue: input,
        selectedSymbol: symbol
      };
-      dispatch({ type: OPERATION, payload: dic });
+      dispatch({ type: OPERATION_SUCCESS, payload: dic });
    };
  }
